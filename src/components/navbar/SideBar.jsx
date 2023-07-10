@@ -11,20 +11,24 @@ const SideBar = ({}) => {
       width: "30vw",
       overflowY: "auto",
       maxHeight: "100vh",
-      display: 'flex',
-      flexDirection: 'column',
-      color: 'black',
-      margin: '10%'
+      display: "flex",
+      flexDirection: "column",
+      color: "black",
+      
     },
     mainLinks: {
-        display: 'flex',
-        flexDirection: 'column',
-        color: 'inherit'
+      padding:'5%',
+      display: "flex",
+      flexDirection: "column",
+      color: "inherit",
     },
     seccondaryLinks: {
-
+      padding:'5%',
+      borderTop: "1px solid #f6f5f3",
     },
-    
+    seccondaryLink: {
+      marginTop: "10px",
+    },
   };
   return (
     <>
@@ -42,7 +46,16 @@ const SideBar = ({}) => {
       >
         <Box sx={styles.container}>
           <Box sx={styles.mainLinks}>
-            <LinkGenerator/>
+            <LinkGenerator />
+          </Box>
+          <Box sx={styles.seccondaryLinks}>
+            <Typography sx={styles.seccondaryLink}>Sustainability</Typography>
+            <Typography sx={styles.seccondaryLink}>Stores</Typography>
+            <Typography sx={styles.seccondaryLink}>
+              Ship to: United States
+            </Typography>
+            <Typography sx={styles.seccondaryLink}>Can we help you?</Typography>
+            <Typography sx={styles.seccondaryLink}>+1.866.VUITTON</Typography>
           </Box>
         </Box>
       </Drawer>

@@ -2,6 +2,9 @@ import { Box, Container, Typography } from "@mui/material";
 import React from "react";
 import FAQCard from "../Cards/FAQCard/FAQCard.jsx";
 import SearchBar from "../searchBar/SearchBar.jsx";
+import ThemeCard from "../Cards/themeCard/ThemeCard.jsx";
+import InfoCard from "../Cards/InfoCard/InfoCard.jsx";
+import FrequentQuestionsCard from "../Cards/frequentQuestionsCard/FrequentQuestionsCard.jsx";
 
 const FAQContainer = () => {
   const styles = {
@@ -31,6 +34,16 @@ const FAQContainer = () => {
       fontWeight: "400",
       marginBottom: "20px",
     },
+    mainContainer: {
+      display: "flex",
+      flexDirection: "column",
+      flexWrap: "wrap",
+      height:'70vh'
+    },
+    searchBarContainer: {
+      width: "60%",
+      marginBottom: "50px",
+    },
   };
   return (
     <Box sx={styles.container}>
@@ -39,10 +52,20 @@ const FAQContainer = () => {
         <Typography sx={styles.title}>
           Find out more information with our FAQ page.
         </Typography>
-        <Box width='700px'>
-        <SearchBar color='white'/>
+        <Box sx={styles.searchBarContainer}>
+          <SearchBar color="white" />
         </Box>
-        
+        <Box sx={styles.mainContainer}>
+          <ThemeCard />
+          <Box width="60%">
+            <InfoCard
+              title="CONTACT US "
+              content="Reach out to our Client Services team via your favorite contact method."
+              button="CONTACT US"
+            />
+          </Box>
+          <FrequentQuestionsCard/>
+        </Box>
       </Box>
     </Box>
   );

@@ -5,6 +5,7 @@ import MediaCardGenerator from '../components/Cards/mediaCard/MediaCardGenerator
 import ServiceCardGenerator from "../components/Cards/serviceCard/ServiceCardGenerator";
 import ContactFooter from "../components/contactFooter/ContactFooter";
 import Footer from "../components/footer/Footer";
+import ChatButton from '../components/buttons/ChatButton'
 
 const Home = () => {
 
@@ -15,6 +16,7 @@ const Home = () => {
       <ServiceCardGenerator/>
       <ContactFooter/>
       <Footer/>
+      <ChatButton/>
     </Box>
   );
 };

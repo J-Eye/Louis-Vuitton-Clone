@@ -1,9 +1,9 @@
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
 import ContactCard from "../Cards/contactCard/ContactCard";
-import RepairServiceCard from "../Cards/repairServiceCard/RepairServiceCard";
+import InfoCard from "../Cards/InfoCard/InfoCard";
 import FAQCard from "../Cards/FAQCard/FAQCard";
-import FrequentQuestionsCardSearch from "../Cards/frequentQuestionsCardSearch/FrequentQuestionsCardSearch";
+import FrequentQuestionsCardSearch from "../Cards/frequentQuestionsCard/FrequentQuestionsCardSearch";
 
 const ContactContainer = () => {
   const styles = {
@@ -44,7 +44,8 @@ const ContactContainer = () => {
           Services team or find out more information through our FAQ page.{" "}
         </Typography>
         <ContactCard/>
-        <RepairServiceCard/>
+        <InfoCard title='REPAIR SERVICES' content='Repairs can be requested either online or in Louis Vuitton stores.<br/>
+          Please allow our artisans up to 6 weeks for your repair.' button='Care Services'/>
         <FrequentQuestionsCardSearch/>
       </Box>
     </Box>

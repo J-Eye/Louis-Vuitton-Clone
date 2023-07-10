@@ -4,6 +4,7 @@ import ContactFooter from '../components/contactFooter/ContactFooter'
 import Footer from '../components/footer/Footer'
 import HelpNavigator from '../components/helpNavigator/HelpNavigator'
 import FAQContainer from '../components/infoContainers/FAQContainer'
+import ChatButton from '../components/buttons/ChatButton'
 
 const FAQ = () => {
   return (
@@ -13,6 +14,7 @@ const FAQ = () => {
     <FAQContainer/>
     <ContactFooter/>
     <Footer/>
+    <ChatButton/>
     </>
   )
 }

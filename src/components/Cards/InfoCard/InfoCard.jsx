@@ -2,10 +2,10 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 import ContactButton from "../../buttons/ContactButton";
 
-const RepairServiceCard = () => {
+const InfoCard = ({title, content, button}) => {
   const styles = {
     container: {
-      marginTop:'20px',
+      margin:'20px 0',
       backgroundColor: "white",
       width: "100%",
       display: "flex",
@@ -36,17 +36,16 @@ const RepairServiceCard = () => {
   return (
     <Box sx={styles.container}>
       <Box sx={styles.contentContainer}>
-        <Typography sx={styles.title}>REPAIR SERVICES</Typography>
+        <Typography sx={styles.title}>{title}</Typography>
         <Typography sx={styles.text}>
-          Repairs can be requested either online or in Louis Vuitton stores.<br/>
-          Please allow our artisans up to 6 weeks for your repair.
+          {content}
         </Typography>
         <Box sx={styles.buttonContainer}>
-          <ContactButton title="Care Services" />
+          <ContactButton title={button} />
         </Box>
       </Box>
     </Box>
   );
 };
 
-export default RepairServiceCard;
+export default InfoCard;
